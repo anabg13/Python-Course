@@ -1,0 +1,5 @@
+print('Question 1:')
+ans1 = input('What is you favourite color?: ')
+print('Question 2:')
+ans2 = input('What city would you like to visit soon?: ')
+print('Your brand name is: "' + ans1 + ' ' + ans2 + '"' '\nHope you like it.')
