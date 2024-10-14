@@ -1,6 +1,10 @@
 print('Welcome to the comision calculator!')
 
 name = input('What is your name?: ')
+if not name.isalpha():
+    print('Error. You must introduce a word.')
+    exit()
+
 sales = int(input('How much in sales did you make this month?: '))
 commissions = int(input('What is your commission rate? (enter as %): '))
 
