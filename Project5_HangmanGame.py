@@ -36,7 +36,7 @@ def check_letter(word_to_find, letter, wrong_letters, right_letters, lives, spac
                 if word_to_find[i] == letter:
                     spaces[i] = letter
             if ''.join(spaces) == word_to_find:
-                print('Congratulations. You find the word.')
+                print('Congratulations. You find the word: ', word_to_find)
                 exit()
             print('Current word:', ' '.join(spaces))
 
@@ -65,3 +65,4 @@ if __name__ == "__main__":
     while lives != 0:
         letter = ask_for_letter()
         lives, spaces = check_letter(word_to_find, letter, wrong_letters, right_letters, lives, spaces)
+
